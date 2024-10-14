@@ -1,0 +1,246 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilo para los enlaces de navegación */
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Estilo para el contenedor principal */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilo para la sección de productos */
+.productos-destacados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Estilo para cada producto */
+.producto {
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Estilo para la caja del formulario en la página de login */
+.caja-login {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Centrar el formulario en la página de login */
+.login-page main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+}
+
+.formulario input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.formulario button:hover {
+    background-color: #555;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.detalle-producto {
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 250px; /* Ancho fijo para todos los detalles */
+    border-radius: 10px; /* Bordes redondeados para un look moderno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.detalle-producto img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Altura fija para que todas las imágenes tengan el mismo tamaño */
+    object-fit: cover; /* Cubre el área sin distorsionar la imagen */
+}
+
+
+/* Clase específica para la sección de detalles de los productos */
+.detalles-producto-individuales {
+    display: flex;              /* Usa flexbox para alinear los productos */
+    justify-content: space-around; /* Espacio entre los productos */
+    flex-wrap: wrap;           /* Permite que los productos se ajusten en varias filas */
+    margin: 20px 0;            /* Añade un margen superior e inferior */
+}
+
+.detalle-producto {
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 10px;              /* Margen entre productos */
+    padding: 15px;
+    text-align: center;
+    width: 250px;              /* Ancho fijo para todos los detalles */
+    border-radius: 10px;       /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.detalle-producto img {
+    width: 100%;               /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px;             /* Altura fija */
+    object-fit: cover;         /* Cubre el área sin distorsionar la imagen */
+}
+
+/* productos.css */
+
+/* Estilo para el contenedor de ponis */
+.ponis-destacados {
+    display: flex;                    /* Establece el uso de Flexbox */
+    justify-content: space-around;    /* Espacia los ponis uniformemente */
+    flex-wrap: wrap;                  /* Permite que los ponis se ajusten a la siguiente línea */
+    margin: 20px 0;                  /* Añade margen superior e inferior */
+}
+
+/* Estilo para cada poni */
+.poni {
+    border: 1px solid #ccc;           /* Borde alrededor de cada poni */
+    background: #fff;                 /* Fondo blanco para los ponis */
+    margin: 10px;                     /* Margen entre ponis */
+    padding: 15px;                    /* Espacio interno dentro de cada poni */
+    text-align: center;               /* Centra el texto dentro de los ponis */
+    flex: 1 0 21%;                    /* Ancho base y permite que se ajusten */
+    box-sizing: border-box;           /* Incluye padding y borde en el tamaño total */
+}
+
+.poni img {
+    max-width: 100%;                  /* Asegura que la imagen ocupe el ancho del contenedor */
+    height: auto;                     /* Mantiene la relación de aspecto de la imagen */
+}
+
+/* Estilos específicos para producto.html */
+
+.producto-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para la sección de detalles */
+    border: 1px solid #ccc; /* Borde ligero para destacar la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.imagenes-producto {
+    flex: 1; /* Toma el espacio necesario */
+    margin-right: 20px; /* Espacio a la derecha del bloque de imágenes */
+}
+
+.imagen-principal {
+    width: 50%; /* La imagen principal ocupa todo el ancho */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados para la imagen principal */
+}
+
+.imagenes-adicionales {
+    display: flex; /* Usa flexbox para las imágenes adicionales */
+    margin-top: 10px; /* Margen superior */
+}
+
+.imagenes-adicionales img {
+    width: 100px; /* Ancho fijo para las imágenes adicionales */
+    height: 100px; /* Altura fija para las imágenes adicionales */
+    margin-right: 5px; /* Espacio entre imágenes */
+    border-radius: 5px; /* Bordes redondeados para las imágenes adicionales */
+}
+
+.informacion-producto {
+    flex: 1; /* Toma el espacio necesario */
+}
+
+.informacion-producto h2 {
+    color: #333; /* Color para el título del producto */
+}
+
+.precio {
+    font-size: 24px; /* Aumenta el tamaño de la fuente del precio */
+    font-weight: bold; /* Negrita para destacar el precio */
+    color: #d9534f; /* Color rojo para resaltar el precio */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+button {
+    margin-top: 15px; /* Espacio encima del botón */
+    padding: 10px; /* Espacio interno del botón */
+    width: 100%; /* Botón ocupa todo el ancho disponible */
+    background-color: #5cb85c; /* Fondo verde para el botón */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+button:hover {
+    background-color: #4cae4c; /* Color más oscuro al pasar el mouse */
+}
